@@ -50,3 +50,7 @@ Apellido: String
 VIERNES 11-03-2021 ---
 
 Funcion: Input
+
+LUNES 15-03-2022:
+
+Útilizar librerias en Python (Números aleatorios)

@@ -28,6 +28,7 @@
 #https://docs.python.org/es/3/tutorial/venv.html
 #Se Importa la libreria para realizar componentes de ventana https://docs.python.org/es/3/library/tk.html
 
+from sre_parse import State
 import tkinter as tk
 from tkinter import ttk
 
@@ -206,13 +207,14 @@ def main():
     
     app.mainloop()
     
+    return app
+
 def EnableEntrys():
     pass
 
-def DisabledEntrys():
-    pass
-    
-    
+def DisabledEntrys():    
+    l = main()
+    l.BottonCancel.config(State = 'disabled')
     
 
         
