@@ -5,10 +5,6 @@
 # (Ejemplo de prueba: Si el usuario ingresa -4, 7 y -10, el programa debe
 # mostrar -10<-4<7.)
 
-
-
-
-
 while True:
     try:
       a = int(input('Ingrese un número: '))
