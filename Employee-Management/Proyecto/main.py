@@ -28,7 +28,6 @@
 #https://docs.python.org/es/3/tutorial/venv.html
 #Se Importa la libreria para realizar componentes de ventana https://docs.python.org/es/3/library/tk.html
 
-from sre_parse import State
 import tkinter as tk
 from tkinter import ttk
 
@@ -203,29 +202,13 @@ def main():
                       activeforeground = '#fff' )
     BottonCancel.grid( row = 8, column = 2, pady= (30, 0), padx = (20, 0), ipady = 5, sticky = 'w')
 
+   #Mostrar la información optenida de los entrys.
    
     
+    
     app.mainloop()
-    
-    return app
-
-def EnableEntrys():
-    pass
-
-def DisabledEntrys():    
-    l = main()
-    l.BottonCancel.config(State = 'disabled')
-    
-
         
-    
-
-    
-            
-    
 
 #Entry Point - Punto de entrada    
 if __name__ == '__main__':
     main()
-    EnableEntrys()
-    DisabledEntrys()

@@ -316,6 +316,69 @@
 
 #Ejemplo con el pago en caja
 
-Transacción = {'día': 24, 'Costo': 50000, 'efectivo' : 50000, 'Nombre_del_cajero': 'David'}
-Transacción2 = Transacción.copy()
+# Transacción = {'día': 24, 'Costo': 50000, 'efectivo' : 50000, 'Nombre_del_cajero': 'David'}
+# Transacción2 = Transacción.copy()
 #Cambiar los datos con appends
+
+#LISTAS DIFERENCIAS
+# A = [[0,0,0],[0,0,0],[0,0,0]]
+# print(A)
+# B = [[0]*3]*3
+# print(B)
+
+#FOR ESPECIAL
+#NO se necesita definir una varible en el for para iterar una variable
+# a = 1
+# for _ in range(3):
+#   a += 1
+# print(a)
+
+# c = [[0]*3 for _ in range(3)]
+# print(c)
+# c[0][0] = 1
+# print(c)
+
+# CLASES:
+# Python: POO
+#Clases = Es una especie de conjunto, se puede crear elementos de esta clase
+#Un elemento creado se llama instancia.
+
+#0,1,2,3,4,5...
+# (self, caracteristica) # ATRIBUTO
+# (self, caracteristica, método) # MÉTODOS
+
+# class NumeroNatural: #Definicion de la clase
+#   def __init__(self, nombre, valor): #método inicial
+#       self.nombre = nombre
+#       self.valor = valor
+#       print('Soy el número', nombre)
+      
+#   def siguiente(self):
+#       self.valor += 1
+#       print('Ya no soy el número', self.nombre, 'ahora soy', self.valor)
+
+#   def paridad(self):
+#       if self.valor%2==0:
+#         print('soy un número par')
+#       else:
+#         print('Soy un número impar')
+  
+# numero = NumeroNatural('tres', 3) #instacia de la clase número natural
+# #a una instacia le podemos asociar atributos(Caracteristicas) y métodos(Cosas que puede hacer).
+# #EJECUTAR UN MÉTODO
+# numero.paridad()
+# numero.siguiente()
+# numero.paridad()
+
+
+#CLASE DE MASCOTA -- Conjunto de mascotas
+#ATRIBUTOS: Especie, Edad, Dueño, Tamaño
+#MÉTODOS: ¿Qué especie es?, Cambiar de dueño, Cambiar tamaño 
+class mascota:
+    def __init__(self, especie, edad, dueño, tamaño): #método inicial
+      self.especie = especie                           #Definicion de atributos
+      self.edad = edad
+      self.dueño = dueño
+      self.tamaño = tamaño
+
+mascota1 = mascota('perro', 3, 'Juan', 30) #instancia que tiene atributos.
